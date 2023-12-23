@@ -5,7 +5,10 @@ import './ai.css';
 
 function ai() {
   return (
-    <div><h1>Ai</h1></div>
+    <div className='aiContainer'>
+      <h1>Ai</h1>
+    
+    </div>
   )
 }
 
