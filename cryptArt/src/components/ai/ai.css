@@ -1,5 +1,7 @@
 .aiContainer{
-    background:black;
+    background:none;
+    margin-left: 15px;
 
     height: 80vh;
 }
+

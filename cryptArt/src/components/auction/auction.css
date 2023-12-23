@@ -1,5 +1,7 @@
 .auctionPage {
-    /* box-shadow: 2px 3px 1px 2px rgb(165, 150, 150); */
+
+    margin-left: 15px;
+    box-shadow: 2px 3px 1px 2px rgb(236, 229, 229);
     background: black;
     position: absolute;
     display: grid;

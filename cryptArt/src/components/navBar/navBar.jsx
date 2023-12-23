@@ -2,7 +2,10 @@ import React from 'react'
 
 import './navBar.css';
 
+
+
 import CryptArt from './CryptArt.png'
+import Search from './search.svg'
 
 
 function navBar() {
@@ -19,13 +22,20 @@ function navBar() {
         <ul>
             <li><a href="#">Mints</a></li>
             <li><a href="#">DAO</a></li>
-            <li><a href="#">Rewars</a></li>
+            <li><a href="#">Rewards</a></li>
             <li><a href="#">Docs</a></li>
             
         </ul>
         </div>
 
-        <div className='darkmood'></div>
+        <div className='searchBox'>
+
+          <input type="text" 
+          placeholder='' 
+          className='input'/>
+
+          <img src={Search} alt="searchIcon" className='searchIcon'/>
+        </div>
     </div>
   )
 }
