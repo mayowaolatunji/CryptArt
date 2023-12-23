@@ -1,0 +1,95 @@
+.Intro{
+    background: none;
+    margin-left: 15px;
+    margin-top: 0px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+}
+
+
+
+.introText{
+    background: none;
+    color: black;
+    margin-top: 85px;
+    position: relative;
+    display: block;
+    font-family: georgia, times;
+
+    width: 550px;
+}
+
+.introText h3{
+    font-size: 1.35rem;
+}
+
+.introText p{
+    font-size: 0.9rem;
+}
+
+.green{
+    color: green;
+}
+
+.gray{
+    color: rgb(49, 48, 48);
+}
+
+.white{
+    color: white;
+}
+
+.red{
+    color: red;
+    font-weight: 600;
+}
+
+
+.brush{
+    background: none;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 650px;
+    height: 168%;
+    width: 115%;
+}
+
+.box1{
+    background: rgb(189, 185, 185);
+    position: absolute;
+    height: 35px;
+    width: 300px;
+    margin: 20px 0px;
+    box-shadow: 3px 3px 4px rgba(18, 21, 26, 0.8);
+
+}
+
+.box2{
+    background: black;
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin: 319.6px 345px;
+
+    box-shadow: 2px 3px 4px rgba(7, 5, 5, 0.8);
+    
+    animation: moveArrow 6s alternate-reverse infinite;
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateX(-350px);
+    background-color: rgb(175, 173, 173);
+    
+  }
+
+  50%{
+    background-color: rgb(73, 71, 73);
+  }
+
+  to {
+    transform: translateX(0px);
+    background-color: rgb(7, 6, 6);
+  }
+}

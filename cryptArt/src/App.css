@@ -1,6 +1,43 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
+}
+
+
+.container{
+  height: 300vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr 1fr 0.4fr;
+
+  grid-template-areas: 
+  "Navbar"
+  "Intro"
+  "Auction"
+  "Ai"
+  "Footer";
+  }
+
+
+.Navbar{
+  grid-area: Navbar;
+}
+
+.Intro{
+  grid-area: Intro;
+
+}
+
+.Auction{
+  grid-area: Auction;
+}
+
+.Ai{
+  grid-area: Ai;
+}
+
+.Footer{
+  grid-area: Footer;
 }
