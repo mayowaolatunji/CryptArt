@@ -1,4 +1,61 @@
 .Footer{
     background: black;
     height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.footerContent{
+    /* position: relative; */
+    display: flex;
+    margin-left: 40px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    position: relative;
+    padding-right: 200px;
+    align-items: center;
+    justify-content: center;
+    padding-top: -4px;
+    display: block;
+}
+
+.list ul{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}
+
+.community ul{
+    font-size: small;
+    display: block;
+
+}
+
+ul li{
+    font-family: georgia;
+    font-style: oblique;
+    text-decoration: solid;
+    text-shadow: 2px 1px 1px rgb(0, 0, 0);
+    text-transform: capitalize;
+    color: rgb(145, 145, 145);
+    outline: white;
+    font-size: .9em;
+}
+
+li.headerText{
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-style: normal;
+    color: rgb(53, 59, 59);
+}
+
+
+
