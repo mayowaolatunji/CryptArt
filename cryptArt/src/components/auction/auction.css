@@ -4,7 +4,7 @@
     box-shadow: 2px 3px 1px 2px rgb(236, 229, 229);
     background: black;
     position: absolute;
-    display: grid;
+    display: block;
     overflow-x: hidden; /* Set to 'hidden' to hide overflow */
     width: 100%; /* Adjusted width to prevent overflow */
     height: 83vh;
@@ -22,9 +22,43 @@
   }
   
 .auctionPage h3{
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: 800;
     color: rgb(206, 205, 205);
+}
+
+.cardNFT{
+  margin-left: 50px;
+
+  display: flex;
+  color: beige;
+}
+
+.line{
+  background: white;
+  height: 2px;
+  margin-top: -19px;
+
+  box-shadow: 2px 1px 2px rgb(0, 0, 0);
+}
+
+.card{
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.collectionName{
+  display: block;
+  color: white;
+}
+
+
+
+.card h3{
+  margin-right: 120px;
+
 }
 
   .auctionPage img {
@@ -37,4 +71,11 @@
     /* animation: moveLeft 10s linear infinite;  */
   }
 
-  
+.header h3{
+  justify-content: left;
+  margin-right: 1120px;
+  color: rgb(245, 241, 241);
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px  rgb(0, 0, 0);
+
+}  

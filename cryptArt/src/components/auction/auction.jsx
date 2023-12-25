@@ -34,16 +34,33 @@ const Auction = () => {
   );
 
   return (
+    <>
     <div className='auctionPage'>
+
+     <div className='header'>
+     <div className="line"></div>
+      <h3>Auction Collection</h3>
+      <div className="line"></div>
+     </div>
+
+
       {filteredCollections.map((collection) => (
         <div className='card' key={collection.collection}>
-          <h3 className='collectionName'>{collection.name}</h3>
-          {/* <p>Description: {collection.description}</p> */}
-          <img src={collection.image_url} alt={collection.name} />
-          {/* Add more elements as needed */}
+
+          <div className='collectionName'>
+           <h3>{collection.name}</h3>
+           <p className='cardDescription'> {collection.description}</p>
+
+          </div>
+          <div className='cardNFT'>
+           <img src={collection.image_url} alt={collection.name} />
+          </div>
+
+
         </div>
       ))}
     </div>
+    </>
   );
 };
 
