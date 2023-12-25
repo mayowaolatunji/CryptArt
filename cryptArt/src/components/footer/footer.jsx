@@ -2,6 +2,10 @@ import React from 'react'
 
 import './footer.css';
 
+import Telegram from './telegram.svg'
+import Twitter from './twitter.svg'
+import Discord from './discord.svg'
+
 
 function footer() {
   return (
@@ -41,10 +45,13 @@ function footer() {
       <div className="community">
         <ul>
           <li className='headerText'>Community</li>
-          <li>dhdj</li>
-          <li>dhdj</li>
-          <li>dhdj</li>
         </ul>
+
+        <div className="communityImg">
+        <img src={Discord} alt="" />
+        <img src={Telegram} alt="" />
+        <img src={Twitter} alt="" />
+        </div>
       </div>
 
       </div>

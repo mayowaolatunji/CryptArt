@@ -33,9 +33,12 @@
     font-size: small;
 }
 
-.community ul{
+.community{
     font-size: small;
     display: block;
+    margin-top: 15px;
+    margin-bottom: 13px ;
+
 
 }
 
@@ -59,3 +62,17 @@ li.headerText{
 
 
 
+.community img{
+    background: rgb(121, 121, 121);
+    height: 20px;
+    width: 30px;
+    display: block;
+    margin-left: 43px;
+    margin-top: 5px;
+    top: -10px;
+    border-radius: 15px;
+}
+
+.communityImg{
+    margin-top: -10px;
+}
