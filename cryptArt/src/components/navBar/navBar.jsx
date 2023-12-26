@@ -6,7 +6,7 @@ import './navBar.css';
 
 import CryptArt from './CryptArt.png'
 import Search from './search.svg'
-import Profile from './profile.svg'
+import Profile from './profile1.svg'
 
 function navBar() {
   return (
@@ -23,7 +23,6 @@ function navBar() {
         <ul>
             <li><a href="#">Mint</a></li>
             <li><a href="#">Collections</a></li>
-            <li><a href="#">Community</a></li>
             <li><a href="#">Rewards</a></li>
             <li><a href="#">Docs</a></li>
             

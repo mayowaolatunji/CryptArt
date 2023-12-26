@@ -1,7 +1,7 @@
 .auctionPage {
-
+    border-radius: px;
     margin-left: 15px;
-    box-shadow: 2px 3px 1px 2px rgb(236, 229, 229);
+    box-shadow: 2px 3px 1px 2px rgb(36, 34, 34);
     background: black;
     position: absolute;
     display: block;
@@ -11,7 +11,7 @@
     color: black;
     /* animation: moveLeft 10s linear infinite;  */
 
-    margin-top: -90px;
+    margin-top: -80px;
   
     grid-template-columns: 1fr 1fr 1fr  1fr;
     /* grid-template-rows: 0.5fr 0.5fr; */
@@ -22,17 +22,13 @@
   }
   
 .auctionPage h3{
+  margin-top: 40px;
+
     font-size: .8rem;
     font-weight: 800;
     color: rgb(206, 205, 205);
 }
 
-.cardNFT{
-  margin-left: 50px;
-
-  display: flex;
-  color: beige;
-}
 
 .line{
   background: white;
@@ -42,23 +38,50 @@
   box-shadow: 2px 1px 2px rgb(0, 0, 0);
 }
 
+.cardBoard{
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  display: grid;
+  padding: 5px;
+
+  grid-template-columns: 1fr 1fr 1fr  1fr;
+  /* grid-template-rows: 0.5fr 0.5fr; */
+
+  grid-template-areas: 
+    'card card card'
+    'card card card';
+}
+
 .card{
-  margin-left: 50px;
+  padding-top: 0px;
+  
+  margin-bottom: 0px;
+
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.collectionName{
+  text-align: left;
   display: block;
-  color: white;
 }
-
 
 
 .card h3{
-  margin-right: 120px;
+  margin-left: 50px;
+  padding-top: 10px;
+}
 
+.chainInfo{
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  font-size: .8em;
+  display: flex;
+  
+}
+
+.cardPrice{
+  margin-right: 30px;
 }
 
   .auctionPage img {
@@ -66,16 +89,42 @@
     background: rgb(0, 0, 0);
     box-shadow: 2px 1px 2px 0px rgb(218, 213, 213);
     padding: 5px;
-    height: 200px;
-    width: 200px; /* Fixed width to prevent overflow */
+    height: 230px;
+    width: 230px; /* Fixed width to prevent overflow */
     /* animation: moveLeft 10s linear infinite;  */
+    margin-left: 50px;
+
   }
+
+  /* .cartIcon {
+    background: white;
+    width: 50px;
+    height: 10px;
+  } */
 
 .header h3{
   justify-content: left;
-  margin-right: 1120px;
+  align-items: center;
+  margin-left: -1200px;
   color: rgb(245, 241, 241);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 100px;
   text-shadow: 1px 1px 2px  rgb(0, 0, 0);
-
 }  
+
+.header{
+  position: absolute;
+  background: black;
+  margin-top: -130px;
+  margin-left: 15px;
+  width: 1500px;
+
+}
+
+
+.cardNFT{
+  background: rgb(19, 18, 18);
+  margin-left: 10px;
+
+  padding-bottom: 2px;
+}

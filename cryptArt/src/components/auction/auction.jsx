@@ -1,8 +1,23 @@
 import './auction.css';
 import React, { useState, useEffect } from 'react';
 
+import Cart from './cart.svg'
+
+// ... (imports)
+
 const Auction = () => {
   const [collections, setCollections] = useState([]);
+
+  const generateRandomPrice = () => {
+    return (Math.random() * (4 - 0.5) + 0.5).toFixed(2);
+  };
+
+  const addRandomPrices = (collections) => {
+    return collections.map((collection) => ({
+      ...collection,
+      randomPrice: generateRandomPrice(),
+    }));
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,7 +35,8 @@ const Auction = () => {
           options
         );
         const data = await response.json();
-        setCollections(data.collections);
+        const collectionsWithRandomPrices = addRandomPrices(data.collections);
+        setCollections(collectionsWithRandomPrices);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -35,31 +51,31 @@ const Auction = () => {
 
   return (
     <>
-    <div className='auctionPage'>
+      <div className='header'>
+        <h3>Auction Collections</h3>
+        <div className="line"></div>
+      </div>
 
-     <div className='header'>
-     <div className="line"></div>
-      <h3>Auction Collection</h3>
-      <div className="line"></div>
-     </div>
-
-
-      {filteredCollections.map((collection) => (
-        <div className='card' key={collection.collection}>
-
-          <div className='collectionName'>
-           <h3>{collection.name}</h3>
-           <p className='cardDescription'> {collection.description}</p>
-
-          </div>
-          <div className='cardNFT'>
-           <img src={collection.image_url} alt={collection.name} />
-          </div>
-
-
+      <div className='auctionPage'>
+        <div className='cardBoard'>
+          {filteredCollections.map((collection) => (
+            <div className='card' key={collection.collection}>
+              <div className='cardNFT'>
+                <h3 className='collectionName'>{collection.name}</h3>
+                <img src={collection.image_url} alt={collection.name} />
+                <div className="chainInfo">
+                  <p>
+                    Chain: {collection.contracts.map(contract => contract.chain).join(', ')}
+                  </p>
+                  <p className='cardPrice'>
+                    {collection.randomPrice} ETH
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
     </>
   );
 };
