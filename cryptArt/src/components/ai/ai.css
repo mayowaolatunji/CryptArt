@@ -1,5 +1,5 @@
 .aiContainer{
-    background:rgb(205, 205, 209);
+    background:rgb(21, 21, 39);
     margin-left: 15px;
     margin-top: -52px;
     height: 80vh;
@@ -19,11 +19,11 @@
 .sideCard{
     position: relative;
   grid-area: sideCard;    
-  background-color: rgb(18, 56, 107);
+  background-color: rgb(8, 12, 17);
   padding: 10px;
   margin: 8px;
   height: 93.5%;
-  box-shadow: 4px 3px 2px rgb(73, 71, 71);
+  box-shadow: 2px 3px 2px rgb(22, 20, 20);
 
   align-items: center;
   justify-content: center;
@@ -41,8 +41,9 @@
 }
 
 .text span{
-    font-weight: 1000;
-    color: black;
+    font-weight: 800;
+    color: rgb(235, 226, 226);
+    font-size: 0.98rem;
 }
 
 .text p{
@@ -51,7 +52,7 @@
 
 .sideCard button{
     margin-left: -10px;
-    padding-top: 8x;
+    padding-top: 10x;
     color: black;
     font-weight: 800;
     background: rgb(255, 255, 255);
@@ -78,11 +79,55 @@
 }
 
 .aiCard{
-background: black;
-grid-area: aiCard; 
-height: 93.5%;
-margin-left: -2px;
-padding: 10px;
-margin-top: 8px;
-margin-right: 8px;
+ background: none;
+ grid-area: aiCard; 
+ height: 93.5%;
+ margin-left: -2px;
+ padding: 10px;
+ margin-top: 8px;
+ margin-right: 15px;
+
+ display: block;
+ 
+ align-items: center;
+ justify-content: center;
+ /* border: 2px solid black; */
+}
+
+.aiCard .imgBox{
+    background: rgb(14, 10, 10);
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 420px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 200px;
+
+}
+
+.imgBox img{
+    margin-top: 10px;
+
+    box-shadow: 2px 1px 3px;
+
+    height: 400px;
+    width: 400px;
+
+}
+
+
+.searchBox input{
+    background: white;
+    color: black;
+    border: 0px none transparent;
+    border-radius: 18px;
+    outline: none;
+    height: 30px;
+    width: 250px;
+    align-content: center;
+    text-align: center;
+
+    margin-top: 10px;
+    padding-left: 0px;
 }
