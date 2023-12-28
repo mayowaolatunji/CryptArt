@@ -73,10 +73,13 @@
 
 .btn img{
     position: absolute;
-    height: 30px;
-    margin-top: 6px;
+    height: 25px;
+    margin-top: 8px;
     margin-left: -35px;
+
+
 }
+
 
 .aiCard{
  background: none;
@@ -123,11 +126,31 @@
     border: 0px none transparent;
     border-radius: 18px;
     outline: none;
-    height: 30px;
-    width: 250px;
+    height: 35px;
+    width: 300px;
     align-content: center;
     text-align: center;
 
     margin-top: 10px;
-    padding-left: 0px;
+    padding-right: 95px;
+    padding-left: 10px;
+}
+
+.searchBox .generate-btn{
+    height: 39px;
+    width: 100px;
+    border-radius: 18px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
+    font-weight: 700;
+    border: 4px none black;
+
+    margin-left: -90px;
+    transition: .4s;
+}
+
+.searchBox .generate-btn:hover{
+
+    font-size: 0.85rem;
+
 }
